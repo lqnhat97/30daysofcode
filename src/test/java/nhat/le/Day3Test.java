@@ -4,13 +4,17 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class Day3Test {
+    @Test
+    void solve_thenWeird() {
+        int n = 5;
+        String result = Day3.solve(n);
+        Assertions.assertEquals("Weird", result);
+    }
 
     @Test
-    void solve() {
-        double meal_cost = 12;
-        int tip_percent = 20;
-        int tax_percent = 8;
-        double result = Day3.solve(meal_cost, tip_percent, tax_percent);
-        Assertions.assertEquals(15, result);
+    void solve_thenNotWeird() {
+        int n = 22;
+        String result = Day3.solve(n);
+        Assertions.assertEquals("Not Weird", result);
     }
 }
