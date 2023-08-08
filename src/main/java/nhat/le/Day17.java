@@ -1,6 +1,6 @@
 package nhat.le;
 
-class Calculator {
+class CalculatorD17 {
     int power(int n, int p) {
         if (n < 0 || p < 0) {
             throw new RuntimeException("n and p should be non-negative");
@@ -47,7 +47,7 @@ public class Day17 {
 //    n and p should be non-negative
 //    n and p should be non-negative
     public static int solve(int n, int p) {
-        Calculator myCalculator = new Calculator();
-        return myCalculator.power(n, p);
+        CalculatorD17 myCalculatorD17 = new CalculatorD17();
+        return myCalculatorD17.power(n, p);
     }
 }
